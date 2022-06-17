@@ -1,0 +1,165 @@
+
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  --bg-clr:#2563eb;
+  background-color: var(--bg-clr);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #00a2ffb6;
+  height: 70px;
+  border-radius: 0 0 30px 30px;
+  margin-bottom: 20px;
+}
+
+.navbar > a {
+  font-size: 50px;
+  cursor: pointer;
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar > a:hover {
+  
+  transform: translateY(5px);
+  color: rgb(0, 183, 255);
+  transition: 0.4s;
+}
+
+.image {
+  position: relative;
+  max-width: 150px;
+  margin-top: 40px;
+  margin: auto;
+  
+}
+.image > img {
+  width: 100%;
+  border-radius: 51%;
+  display: block;
+}
+
+.image::before {
+  content: "";
+  position: absolute;
+  inset: -15px;
+  border: 10px solid white;
+  border-top-color: #00a2ffb6;
+  border-bottom-color: #00a2ffb6;
+  border-radius: 51%;
+  z-index: -1;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  to{ transform: rotate(360deg);}
+}
+
+.name {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 60px;
+  color: white;
+}
+
+.main-text {
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+  font-size: large;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 350px;
+  margin: auto;
+  border: 8px double grey;
+  border-radius: 15px;
+
+}
+
+.card-container > p {
+  color: white;
+  font-size: large;
+}
+.cards {
+  display: flex;
+  margin-top: 10px;
+
+}
+.card {
+  font-size: 50px;
+  color: rgb(0, 183, 255);
+  margin-left: 3px;
+  margin-right: 3px;
+  animation: float 7s ease-in-out infinite;
+}
+
+.css {
+  animation-delay: 1.3s;
+}
+
+.javascript {
+  animation-delay: 2.6s;
+}
+
+.react {
+  animation-delay: 3.9s;
+}
+
+.contacts-text {
+  text-align: center;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 200px;
+  border-bottom: 5px solid grey;
+}
+.icon {
+  display: inline-block;
+  font-size: 50px;
+  animation: float 5s ease-in-out infinite;
+  margin: 5px;
+  color: rgb(0, 183, 255);
+  cursor: pointer;
+}
+.icon:hover {
+  animation: none;
+  transform: translateY(-15px);
+  transition: 1s;
+  color: white;
+  
+}
+.instagram {
+  animation-delay: 1s;
+}
+
+.linkedin {
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-15px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.contacts-text {
+  color: white;
+  margin-bottom: 50px;
+  font-size: large;
+}
